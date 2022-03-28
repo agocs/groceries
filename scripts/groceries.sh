@@ -23,12 +23,15 @@ sub_new(){
 	cd "${tempDir}"
 	today=$(date +%F)
 	sed -i '' "s/{date}/${today}/" groceries.md
+	echo "About to drop you into a subshell. Edit groceries.md"
+	echo "run `groceries print` to print your grocery list."
+	echo "ctrl + d to get back to where you were"
 	$SHELL
 }
 
 sub_print(){
 	pandoc groceries.md -o groceries.pdf
-	echo "lp groceries.pdf"
+	lp groceries.pdf
 }
 
 subcommand=${1-help}
