@@ -24,7 +24,7 @@ sub_new(){
 	today=$(date +%F)
 	sed -i '' "s/{date}/${today}/" groceries.md
 	echo "About to drop you into a subshell. Edit groceries.md"
-	echo "run `groceries print` to print your grocery list."
+	echo "run \`groceries print\` to print your grocery list."
 	echo "ctrl + d to get back to where you were"
 	$SHELL
 }
