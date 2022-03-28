@@ -6,7 +6,7 @@ Inspired by a [twitter rant](https://twitter.com/agoX/status/1482132235729969154
 ## Requirements
 
 - [pandoc](https://pandoc.org/)
-- `pdflatex` or some other LaTeX engine
+- `pdflatex` or some other LaTeX engine. Install (on a mac) using `brew install --cask basictex`
 - Assumes you will have `lp` and a default printer set up. You can test this by `echo "test page" | lp` and seeing what happens.
 
 ## Installation
