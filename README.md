@@ -24,4 +24,4 @@ I recommend you edit the template to match your home grocery store, or create mu
 
 `groceries new kroger.md` will create a new grocery list using the `kroger.md` template in `~/.groceries/templates` (if there is one)
 
-`groceries print` will print `groceries.md` in your present working directory.
+`groceries print` will compile `groceries.md` in your present working directory into a PDF and send it to a printer.
